@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://QicongXie.github.io/end2endvc/ -->
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  <title>Drop the beat! Freestyler for Accompaniment Conditioned Rapping Voice Generation</title>
+  <meta name="generator" content="Jekyll v3.9.0">
+  <meta property="og:title" content="TODO: title">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <!-- End Jekyll SEO tag -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
+  <section class="page-header">
+    <!-- <h1 class="project-name">Demo PAGE</h1> -->
+    <!-- <h2 class="project-tagline"></h2> -->
+
+
+  </section>
+
+  <section class="main-content">
+    <h1 id="">
+      <center>Drop the beat! Freestyler for Accompaniment Conditioned Rapping Voice Generation</center>
+    </h1>
+
+    <center><h2>Anonymous submission to AAAI 2025</h2></center>
+    <br><br>
+    <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
+    <p>
+      Rap, a prominent genre of vocal performance, remains underexplored in vocal generation. General vocal synthesis depends on precise note and duration inputs, requiring users to have related musical knowledge, which limits flexibility. In contrast, rap typically features simpler melodies, with a core focus on a strong rhythmic sense that harmonizes with accompanying beats. In this paper, we propose Freestyler, the first system that generates rapping vocals directly from lyrics and accompaniment inputs. Freestyler utilizes language model-based token generation, followed by a conditional flow matching model to produce spectrograms and a neural vocoder to restore audio. It allows a 3-second prompt to enable zero-shot timbre control. Due to the scarcity of publicly available rap datasets, we also present RapBank, a rap song dataset collected from the internet, alongside a meticulously designed processing pipeline. Experimental results show that Freestyler produces high-quality rapping voice generation with enhanced naturalness and strong alignment with accompanying beats, both stylistically and rhythmically.
+    </p>
+
+    <table frame=void rules=none>
+      <tr>
+        <center><img src='raw/fig/task.png'></center>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+    <br><br>
+
+    <h2>2. Demo<a name="Comparison"></a></h2>
+
+    <!--
+    <table>
+      <tbody id="tbody">
+      </tbody>
+    </table> 
+  -->
+
+  </section>
+</body>
+
+</html>
+
+<script type="" text/javascript>
+  window.onload = function () {
+    let scenes = ["Clean"]
+    let speakers = ["female", "male"]
+    let genders = ["female", "male"]
+    let models = ["DualVC2", "VQMIVC", "VQMIVC-streaming", "DualVC3-full", "DualVC3-standalone"]
+    let all_samples = [["SSB00430070.wav", "SSB02460443.wav", "SSB03230482.wav", "SSB03410353.wav", "SSB03750317.wav", "SSB04700097.wav", "SSB05900051.wav", "SSB07100255.wav", "SSB07100388.wav", "SSB08170086.wav",], 
+                    ["SSB00430070.wav", "SSB02460443.wav", "SSB03230482.wav", "SSB03410353.wav", "SSB03750317.wav", "SSB04700097.wav", "SSB05900051.wav", "SSB07100255.wav", "SSB07100388.wav", "SSB08170086.wav",]]
+    let sample_data = `
+        <tr>
+          <td style="text-align: center; width: 150px;" rowspan=2><strong>Target Speaker<strong></td>
+          <td style="text-align: center; width: 150px;" rowspan=2><strong>Source speech<strong></td>
+          <td style="text-align: center; width: 150px;" colspan=5><strong>Method<strong></td>
+        </tr>
+        <tr>
+        `
+    for (const id in models) {
+      model = models[id]
+      if (model == 'Baseline') {
+        model = 'IBF-VC'
+      }
+      sample_data += '<td style="text-align: center; width: 150px;" rowspan=1><strong>' + model + '<strong></td>'
+    }
+    sample_data += "</tr>"
+    console.log(sample_data)
+    
+    for (let x in scenes) {
+      let scene = scenes[x]
+      let scene_data = ""
+      scene_data += '<tr>'
+      //scene_data += '<td style="text-align: center; width: 150px;" rowspan=' + 8 + '><strong>' + scene + ' Source' + '<strong></td>'
+      let samples = all_samples[x]
+      console.log(scene, samples)
+      for (let y in speakers) {
+        speaker = speakers[y]
+        gender = genders[y]
+        scene_data += '<td style="text-align: center; width: 150px;" rowspan=10>' + gender + '<audio style="width: 150px;"controls="" src="raw/samples/speakers/' + speaker + '.wav"></td>'
+        for (let z in samples) {
+          if (z != 0) {
+            scene_data += '<tr>'
+          }
+          let sample = samples[z]
+          scene_data += '<td style="text-align: center"><audio style="width: 150px;" controls="" src="raw/samples/' + scene + '/source/' + sample + '"></audio></td>'
+          for (let w in models) {
+            let model = models[w]
+            scene_data += '<td style="text-align: center"><audio style="width: 150px;" controls="" src="raw/samples/' + scene + '/' + model + '/' + speaker + '/' + sample + '"></audio></td>'
+          }
+          scene_data += '</tr>'
+        }
+      }
+      sample_data += scene_data
+    }
+    document.getElementById('tbody').innerHTML = sample_data
+  }
+</script>
