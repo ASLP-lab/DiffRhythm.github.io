@@ -38,17 +38,184 @@
     <p>
       Rap, a prominent genre of vocal performance, remains underexplored in vocal generation. General vocal synthesis depends on precise note and duration inputs, requiring users to have related musical knowledge, which limits flexibility. In contrast, rap typically features simpler melodies, with a core focus on a strong rhythmic sense that harmonizes with accompanying beats. In this paper, we propose Freestyler, the first system that generates rapping vocals directly from lyrics and accompaniment inputs. Freestyler utilizes language model-based token generation, followed by a conditional flow matching model to produce spectrograms and a neural vocoder to restore audio. It allows a 3-second prompt to enable zero-shot timbre control. Due to the scarcity of publicly available rap datasets, we also present RapBank, a rap song dataset collected from the internet, alongside a meticulously designed processing pipeline. Experimental results show that Freestyler produces high-quality rapping voice generation with enhanced naturalness and strong alignment with accompanying beats, both stylistically and rhythmically.
     </p>
-
-    <table frame=void rules=none>
-      <tr>
-        <center><img src='raw/fig/task.png'></center>
-      </tr>
-      <tr>
-      </tr>
-    </table>
     <br><br>
 
+    <style>
+        /* 将 figure 元素设置为居中 */
+        figure {
+            text-align: center; /* 内容居中对齐 */
+            margin: 0; /* 移除默认外边距 */
+        }
+
+        /* 让图片保持其原始大小 */
+        img {
+            max-width: 100%; /* 限制图片最大宽度以适应父容器 */
+            height: auto; /* 保持高度自动 */
+        }
+
+        /* 设置 figcaption 的样式 */
+        figcaption {
+            margin-top: 8px; /* 与图片之间的间距 */
+            font-size: 14px; /* 说明文字的字体大小 */
+            color: #555; /* 说明文字的颜色 */
+        }
+        .gallery {
+            display: flex;
+            justify-content: center; /* 居中对齐 */
+            align-items: center;
+            flex-direction: column; /* 垂直排列 */
+        }
+    </style>
+    <figure>
+        <img src="raw/fig/task.png" alt="task">
+        <figcaption>Figure 1: The overall pipeline of Freestyler. With lyrics and accompaniment as condition, it can generate rapping voice that matches the style and rhythm of the accompaniment.</figcaption>
+    </figure>
+    <br><br>
+    <figure>
+    <img src="raw/fig/lm.png" alt="lm">
+            <img src="raw/fig/fm.png" alt="fm">
+            <figcaption>Figure 2: Overview of Freestyler. The lyrics-to-semantic model in (a) predicts semantic tokens based on lyrics and accompaniment. The accompaniment feature is shifted left by $K$ frames to provide additional rhythmic context. The semantic-to-spectrogram model in (b) generates mel-spectrograms from the semantic tokens, which are interpolated to align with the spectrogram's frame rate. Speaker embedding is provided to both models to control the timbre.</figcaption>    
+    </figure>
+<!--
+    <div class="container">
+        <div class="sub-image">
+            <img src="raw/fig/lm.png" alt="子图 (a)" style="max-width: 100%; height: auto;"> 
+            <p>(a)</p>
+        </div>
+        <div class="sub-image">
+            <img src="raw/fig/fm.png" alt="子图 (b)" style="max-width: 100%; height: auto;"> 
+            <p>(b)</p>
+        </div>
+    </div>
+    <div>
+        <p style="text-align: center;">图标题：这是一个包含两个子图的例子。</p>
+    </div>
+  -->
+
     <h2>2. Demo<a name="Comparison"></a></h2>
+    <h3>2.1. Zero-shot Rapping Voice Generation<a name="Comparison"></a></h3>
+    <table>
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="tg-0lax">Reference</th>
+        <th class="tg-0lax">Lyrics</th>
+        <th class="tg-0lax">FreeStyler</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref1.wav"></audio></td>
+        <td class="tg-0lax" rowspan="4">First off, I want to thank the pioneers for making this possible. Fake, humbleness, snake, dummy shit is intolerable. Living by principle. Staring out over women in swimming suits by the pool. I'm a slide with a few. Every chance was spoiled. No enhancement pill. No dear antler oil. And they panties be soiled. I know some niggas that'll damage your squad. You amateurs play with a man, I send savages charged. It ain't no sit-downs, too late to fix it.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn1.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref2.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn2.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref3.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn3.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref4.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn4.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref5.wav"></audio></td>
+        <td class="tg-0lax" rowspan="4">Couldn't afford to walk in my shoes and smarter sneakers talking way before I ever got paid, to record a feature I was trying to show them the way but they just ignore the leader. I got big passion, rich fashion, Mick Jagger, Rolling Stone, let's celebrate and keep blasting. I'll get out forget I'm still trying to get past it. I say I moved on but I still think about it.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn5.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref6.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn6.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref7.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn7.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref8.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn8.wav"></audio></td>
+      </tr>
+    </tbody></table>
+    <br><br>
+
+    <h3>2.2. Speech Reference Zero-shot<a name="Comparison"></a></h3>
+    <br><br>
+
+    <table><thead>
+      <tr>
+        <th class="tg-0lax">Reference</th>
+        <th class="tg-0lax">Lyrics</th>
+        <th class="tg-0lax">Freestyler</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref1.wav"></audio></td>
+        <td class="tg-0lax">Let Justin the boy post it, You got an album postpone it, I drop two and they both going, I got a feeling they're into feelings, They filming the show but won't show it, You gotta watch me in slow motion, I'm in that wide body bends, I go back to college, Do an album and then drop out again, Took me a minute to get here, My vision is crystal clear.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn1.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref2.wav"></audio></td>
+        <td class="tg-0lax">Some bitch want to kick it. I gotta hit the streets. If I didn't go get it, I guess we didn't eat. Back stressing this dickhead just come evicted me. Back stretching this coat, sipping this briccone. I swear I only write tracks so people get to see. I'm still waking up.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn2.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref3.wav"></audio></td>
+        <td class="tg-0lax">Baby, let me blow it like a trumpet. I could do it all. I could probably suck a waterman and through a straw. Believe me, every other day, new wig, new hair. Come take me out this smooth glare. I'll be waiting on you with some lawn. Should you rage at the spicy down low like bomb. Suey, boom. Nothing but a robe in your house.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn3.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref4.wav"></audio></td>
+        <td class="tg-0lax">But brothers got strikes like oral hers side. So look a lot. Inflation rise like yeast. S&amp;L scandal stole millions. But we need more police to take back our streets. It's drama. We all know that one time being extorting and big ballers, getting extra dotted with warrants in three states. Overcrowded prisons, hoping the DA dropped.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn4.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref5.wav"></audio></td>
+        <td class="tg-0lax">They want to see me take a dive, but I'm bawling up, Uh, politicin like a politician, Talking to the planet moves that's in my description, See the light, still these haters try to knock his vision, That's why I passed the opposition like a proposition, Why I age, which you know about the coalition, We told doubt us from the jumping they were.</td>
+        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn5.wav"></audio></td>
+      </tr>
+    </tbody></table>
+    <br><br>
+
+    <h3>2.3. GPT Lyrics + Text-to-music Accompaniment<a name="Comparison"></a></h3>
+    <br><br>
+
+    <table><thead>
+      <tr>
+        <th class="tg-0lax">Reference</th>
+        <th class="tg-0lax">Lyrics<br>(Generated by GPT-4)</th>
+        <th class="tg-0lax">Accompaniment<br>(Generated by Stable Audio 2.0)</th>
+        <th class="tg-0lax">Freestyler</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax" rowspan="5"><audio style="width: 200px;" controls="" src="raw/samples/gpttta/ref1.wav"></audio></td>
+        <td class="tg-0lax">Yeah, I'm climbing to the peak, no time for defeat,<br>Got my mind on my goals, can't accept no retreat.<br>Spitting fire in the booth, let the truth get unleashed,<br>I'm a beast with the beats, let the rhythm be my leash.</td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm1.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn1.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Life’s a game of chess, I'm strategizing every move,<br>Got the world in my hands, now I'm ready to prove.<br>From the shadows to the spotlight, watch me make it shine,<br>In the rhythm of the night, all the stars align.</td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm2.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn2.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Rise up, get up, never gonna stop,<br>We’re breaking through the ceiling, we’re reaching for the top.<br>Keep your head high, no matter the grind,<br>We’re chasing down dreams with a rhythm that's defined.</td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm3.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn3.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Hustle in my veins, every day’s a new chapter,<br>Grinding through the struggle, I’m the lyrical raptor.<br>Got a vision, got a plan, ain't no chance to stumble,<br>On this journey to the top, see the weak ones crumble.</td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm4.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn4.wav"></audio></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">A warrior in the game, got the heart of a lion,<br>Every setback is a setup for a bigger horizon.<br>From the block to the charts, yeah, I'm leaving a mark,<br>Illuminating paths, let my name leave a spark.</td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm5.wav"></audio></td>
+        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn5.wav"></audio></td>
+      </tr>
+    </tbody></table>
 
     <!--
     <table>
