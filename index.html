@@ -29,51 +29,48 @@
 
   <section class="main-content">
     <h1 id="">
-      <center>Drop the beat! Freestyler for Accompaniment Conditioned Rapping Voice Generation</center>
+      <center>DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent Diffusion</center>
     </h1>
 
-    <center><h2>Accepted by AAAI 2025</h2></center>
-    <center>Ziqian Ning<sup>1, 2</sup>, Shuai Wang<sup>3</sup>, Yuepeng Jiang<sup>1</sup>, Jixun Yao<sup>1</sup>, Lei He<sup>2</sup>, Shifeng Pan<sup>1</sup>, Jie Ding<sup>1</sup>, Lei Xie<sup>1</sup></center>
-    <center><a href="http://www.npu-aslp.org"><sup>1</sup>Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science,</br>Northwestern Polytechnical University, Xi'an, China </a></center>
-    <center><sup>2</sup>Microsoft, China </a></center>
-    <center><a href="http://www.sribd.cn/en"><sup>3</sup>Shenzhen Research Institute of Big Data,</br>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</a></center>
+    <center>Ziqian Ning<sup>1</sup>, Huakang Chen<sup>1</sup>, Yuepeng Jiang<sup>1</sup>, Jixun Yao<sup>1</sup>, Chunbo Hao<sup>1</sup>, Guobin Ma<sup>1</sup>, Shuai Wang<sup>2</sup>, Lei Xie<sup>1</sup></center>
+    <center><a href="http://www.npu-aslp.org">Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China </a></center>
+    <center><a href="http://www.npu-aslp.org">Shenzhen Research Institute of Big Data, The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</a></center>
+    <br><br>
 
-
-    <center>
+    <!-- <center>
       <video width="720" height="480" controls>
         <source src="raw/trump.mp4" type="video/mp4">
       </video>
       <video width="720" height="480" controls>
         <source src="raw/Freestyler_demo.mp4" type="video/mp4">
       </video>
-    </center>
+    </center> -->
+
+    <div style="text-align: center">
+      <a href="https://github.com/multimodal-art-projection/YuE" class="github-link" target="_blank" rel="noopener noreferrer" style="margin-right: 20px;">
+        <svg fill="currentColor" height="28" width="28" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        <span style="font-size: 24px ;">GitHub</span>
+      </a>  
+      <a href="https://huggingface.co" class="huggingface-link" target="_blank" rel="noopener noreferrer">
+        <svg fill="currentColor" height="28" width="28" viewBox="0 0 24 24">
+          <path d="M16.781 3.277c2.997 1.704 4.844 4.851 4.844 8.258 0 .995-.155 1.955-.443 2.857a1.332 1.332 0 011.125.4 1.41 1.41 0 01.2 1.723c.204.165.352.385.428.632l.017.062c.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.255.57-.893 1.018-2.128 1.5l-.202.078-.131.048c-.478.173-.89.295-1.061.345l-.086.024c-.89.243-1.808.375-2.732.394-1.32 0-2.3-.36-2.923-1.067a9.852 9.852 0 01-3.18.018C9.778 21.647 8.802 22 7.494 22a11.249 11.249 0 01-2.541-.343l-.221-.06-.273-.08a16.574 16.574 0 01-1.175-.405c-1.237-.483-1.875-.93-2.13-1.501-.186-.4-.151-.867.093-1.236a1.42 1.42 0 01-.2-1.166c.069-.273.226-.516.447-.694a1.41 1.41 0 01.2-1.722c.233-.248.557-.391.917-.407l.078-.001a9.385 9.385 0 01-.44-2.85c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0zM4.188 14.758c.125.687 2.357 2.35 2.14 2.707-.19.315-.796-.239-.948-.386l-.041-.04-.168-.147c-.561-.479-2.304-1.9-2.74-1.432-.43.46.119.859 1.055 1.42l.784.467.136.083c1.045.643 1.12.84.95 1.113-.188.295-3.07-2.1-3.34-1.083-.27 1.011 2.942 1.304 2.744 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725l.16.04.175.042c1.227.284 3.565.65 4.435-.604.673-.973.64-1.709-.248-2.61l-.057-.057c-.945-.928-1.495-2.288-1.495-2.288l-.017-.058-.025-.072c-.082-.22-.284-.639-.63-.584-.46.073-.798 1.21.12 1.933l.05.038c.977.721-.195 1.21-.573.534l-.058-.104-.143-.25c-.463-.799-1.282-2.111-1.739-2.397-.532-.332-.907-.148-.782.541zm14.842-.541c-.533.335-1.563 2.074-1.94 2.751a.613.613 0 01-.687.302.436.436 0 01-.176-.098.303.303 0 01-.049-.06l-.014-.028-.008-.02-.007-.019-.003-.013-.003-.017a.289.289 0 01-.004-.048c0-.12.071-.266.25-.427.026-.024.054-.047.084-.07l.047-.036c.022-.016.043-.032.063-.049.883-.71.573-1.81.131-1.917l-.031-.006-.056-.004a.368.368 0 00-.062.006l-.028.005-.042.014-.039.017-.028.015-.028.019-.036.027-.023.02c-.173.158-.273.428-.31.542l-.016.054s-.53 1.309-1.439 2.234l-.054.054c-.365.358-.596.69-.702 1.018-.143.437-.066.868.21 1.353.055.097.117.195.187.296.882 1.275 3.282.876 4.494.59l.286-.07.25-.074c.276-.084.736-.233 1.2-.42l.188-.077.065-.028.064-.028.124-.056.081-.038c.529-.252.964-.543.994-.827l.001-.036a.299.299 0 00-.037-.139c-.094-.176-.271-.212-.491-.168l-.045.01c-.044.01-.09.024-.136.04l-.097.035-.054.022c-.559.23-1.238.705-1.607.745h.006a.452.452 0 01-.05.003h-.024l-.024-.003-.023-.005c-.068-.016-.116-.06-.14-.142a.22.22 0 01-.005-.1c.062-.345.958-.595 1.713-.91l.066-.028c.528-.224.97-.483.985-.832v-.04a.47.47 0 00-.016-.098c-.048-.18-.175-.251-.36-.251-.785 0-2.55 1.36-2.92 1.36-.025 0-.048-.007-.058-.024a.6.6 0 01-.046-.088c-.1-.238.068-.462 1.06-1.066l.209-.126c.538-.32 1.01-.588 1.341-.831.29-.212.475-.406.503-.6l.003-.028c.008-.113-.038-.227-.147-.344a.266.266 0 00-.07-.054l-.034-.015-.013-.005a.403.403 0 00-.13-.02c-.162 0-.369.07-.595.18-.637.313-1.431.952-1.826 1.285l-.249.215-.033.033c-.08.078-.288.27-.493.386l-.071.037-.041.019a.535.535 0 01-.122.036h.005a.346.346 0 01-.031.003l.01-.001-.013.001c-.079.005-.145-.021-.19-.095a.113.113 0 01-.014-.065c.027-.465 2.034-1.991 2.152-2.642l.009-.048c.1-.65-.271-.817-.791-.493zM11.938 2.984c-4.798 0-8.688 3.829-8.688 8.55 0 .692.083 1.364.24 2.008l.008-.009c.252-.298.612-.46 1.017-.46.355.008.699.117.993.312.22.14.465.384.715.694.261-.372.69-.598 1.15-.605.852 0 1.367.728 1.562 1.383l.047.105.06.127c.192.396.595 1.139 1.143 1.68 1.06 1.04 1.324 2.115.8 3.266a8.865 8.865 0 002.024-.014c-.505-1.12-.26-2.17.74-3.186l.066-.066c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694a1.87 1.87 0 01.99-.312c.357 0 .682.126.925.36.14-.61.215-1.245.215-1.898 0-4.722-3.89-8.55-8.687-8.55zm1.857 8.926l.439-.212c.553-.264.89-.383.89.152 0 1.093-.771 3.208-3.155 3.262h-.184c-2.325-.052-3.116-2.06-3.156-3.175l-.001-.087c0-1.107 1.452.586 3.25.586.716 0 1.379-.272 1.917-.526zm4.017-3.143c.45 0 .813.358.813.8 0 .441-.364.8-.813.8a.806.806 0 01-.812-.8c0-.442.364-.8.812-.8zm-11.624 0c.448 0 .812.358.812.8 0 .441-.364.8-.812.8a.806.806 0 01-.813-.8c0-.442.364-.8.813-.8zm7.79-.841c.32-.384.846-.54 1.33-.394.483.146.83.564.878 1.06.048.495-.212.97-.659 1.203-.322.168-.447-.477-.767-.585l.002-.003c-.287-.098-.772.362-.925.079a1.215 1.215 0 01.14-1.36zm-4.323 0c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003c-.108.036-.194.134-.273.24l-.118.165c-.11.15-.22.262-.377.18a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394z"></path>
+        </svg>
+        <span style="font-size: 24px;">Hugging Face</span>
+      </a>
+    </div>
+
+
 
     <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-    <!--
-    <p>
-      Rap, a prominent genre of vocal performance, remains underexplored in vocal generation. General vocal synthesis depends on precise note and duration inputs, requiring users to have related musical knowledge, which limits flexibility. In contrast, rap typically features simpler melodies, with a core focus on a strong rhythmic sense that harmonizes with accompanying beats. 
-      In this paper, we propose Freestyler, the first system that generates rapping vocals directly from lyrics and accompaniment inputs. Freestyler utilizes language model-based token generation, followed by a conditional flow matching model to produce spectrograms and a neural vocoder to restore audio. It allows a 3-second prompt to enable zero-shot timbre control. 
-      Due to the scarcity of publicly available rap datasets, we also present RapBank, a rap song dataset collected from the internet, alongside a meticulously designed processing pipeline. Experimental results show that Freestyler produces high-quality rapping voice generation with enhanced naturalness and strong alignment with accompanying beats, both stylistically and rhythmically.
+    
+    <p style="text-align: justify;" >
+      Recent advancements in music generation have garnered significant attention, yet existing approaches face critical limitations. Some current generative models can only synthesize either the vocal track or the accompaniment track. While some models can generate combined vocal and accompaniment, they typically rely on meticulously designed multi-stage cascading architectures and intricate data pipelines, hindering scalability. Additionally, most systems are restricted to generating short musical segments rather than full-length songs. Furthermore, widely used language model-based methods suffer from slow inference speeds.
+      To address these challenges, we propose DiffRhythm, the first latent diffusion-based song generation model capable of synthesizing complete songs with both vocal and accompaniment for durations of up to 4m45s in only ten seconds, maintaining high musicality and intelligibility. Despite its remarkable capabilities, DiffRhythm is designed to be simple and elegant: it eliminates the need for complex data preparation, employs a straightforward model structure, and requires only lyrics and a style prompt during inference. Additionally, its non-autoregressive structure ensures fast inference speeds. This simplicity guarantees the scalability of DiffRhythm.
     </p>
-  -->
-    <table>
-      <tbody>
-        <tr>
-          <td class="tg-0lax"><audio style="width: 200px;" controls="" src="raw/samples/abs/1.wav"></audio></td>
-          <td class="tg-0lax">Rap, a prominent genre of vocal performance, remains underexplored in vocal generation. General vocal synthesis depends on precise note and duration inputs, requiring users to have related musical knowledge, which limits flexibility. In contrast, rap typically features simpler melodies, with a core focus on a strong rhythmic sense that harmonizes with accompanying beats.</td>
-        </tr>
-        <tr>
-          <td class="tg-0lax"><audio style="width: 200px;" controls="" src="raw/samples/abs/2.wav"></audio></td>
-          <td class="tg-0lax">In this paper, we propose Freestyler, the first system that generates rapping vocals directly from lyrics and accompaniment inputs. Freestyler utilizes language model-based token generation, followed by a conditional flow matching model to produce spectrograms and a neural vocoder to restore audio. It allows a 3-second prompt to enable zero-shot timbre control.</td>
-        </tr>
-        <tr>
-          <td class="tg-0lax"><audio style="width: 200px;" controls="" src="raw/samples/abs/3.wav"></audio></td>
-          <td class="tg-0lax">Due to the scarcity of publicly available rap datasets, we also present RapBank, a rap song dataset collected from the internet, alongside a meticulously designed processing pipeline. Experimental results show that Freestyler produces high-quality rapping voice generation with enhanced naturalness and strong alignment with accompanying beats, both stylistically and rhythmically.</td>
-        </tr>
-      </tbody>
-    </table>
-    <br><br>
-
+    
+    
     <style>
         /* 将 figure 元素设置为居中 */
         figure {
@@ -101,166 +98,132 @@
         }
     </style>
     <figure>
-        <img src="raw/fig/task.png" alt="task">
-        <figcaption>Figure 1: The overall pipeline of Freestyler. With lyrics and accompaniment as condition, it can generate rapping voice that matches the style and rhythm of the accompaniment.</figcaption>
+        <img src="raw/fig/model.png" alt="model" width="1000" height="600">
+        <figcaption>Figure 1: Architecture of DiffRhythm. The style and lyrics are used as external control signals, which are preprocessed to get the style embedding and lyrics token, input to DiT to generate latent, and subsequently go through the VAE decoder to generate the audio.</figcaption>
     </figure>
     <br><br>
     <figure>
-    <img src="raw/fig/lm.png" alt="lm">
-            <img src="raw/fig/fm.png" alt="fm">
-            <figcaption>Figure 2: Overview of Freestyler. The lyrics-to-semantic model in (a) predicts semantic tokens based on lyrics and accompaniment. The accompaniment feature is shifted left by $K$ frames to provide additional rhythmic context. The semantic-to-spectrogram model in (b) generates mel-spectrograms from the semantic tokens, which are interpolated to align with the spectrogram's frame rate. Speaker embedding is provided to both models to control the timbre.</figcaption>    
+    <img src="raw/fig/feat.png" alt="feat" width="1000" height="600">
+          <figcaption>Figure 2: The data preprocessing pipeline of DiffRhythm. Lyrics go through G2P and are placed at the positions corresponding to their timestamps</figcaption>    
     </figure>
-<!--
-    <div class="container">
-        <div class="sub-image">
-            <img src="raw/fig/lm.png" alt="子图 (a)" style="max-width: 100%; height: auto;"> 
-            <p>(a)</p>
-        </div>
-        <div class="sub-image">
-            <img src="raw/fig/fm.png" alt="子图 (b)" style="max-width: 100%; height: auto;"> 
-            <p>(b)</p>
-        </div>
-    </div>
-    <div>
-        <p style="text-align: center;">图标题：这是一个包含两个子图的例子。</p>
-    </div>
-  -->
+
 
     <h2>2. Demo<a name="Comparison"></a></h2>
-    <h3>2.1. Zero-shot Rapping Voice Generation<a name="Comparison"></a></h3>
+    <h3>2.1. Music Generation With Text Prompt <a name="Comparison"></a></h3>
     <table>
     </colgroup>
     <thead>
       <tr>
-        <th class="tg-0lax">Reference</th>
+        <th class="tg-0lax">Text Reference</th>
         <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Freestyler</th>
+        <th class="tg-0lax">DiffRhythm</th>
       </tr></thead>
     <tbody>
       <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref1.wav"></audio></td>
-        <td class="tg-0lax" rowspan="4">First off, I want to thank the pioneers for making this possible. Fake, humbleness, snake, dummy shit is intolerable. Living by principle. Staring out over women in swimming suits by the pool. I'm a slide with a few. Every chance was spoiled. No enhancement pill. No dear antler oil. And they panties be soiled. I know some niggas that'll damage your squad. You amateurs play with a man, I send savages charged. It ain't no sit-downs, too late to fix it.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn1.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref2.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn2.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref3.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn3.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref4.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn4.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref5.wav"></audio></td>
-        <td class="tg-0lax" rowspan="4">Couldn't afford to walk in my shoes and smarter sneakers talking way before I ever got paid, to record a feature I was trying to show them the way but they just ignore the leader. I got big passion, rich fashion, Mick Jagger, Rolling Stone, let's celebrate and keep blasting. I'll get out forget I'm still trying to get past it. I say I moved on but I still think about it.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn5.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref6.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn6.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref7.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn7.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/ref8.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/zeroshot/syn8.wav"></audio></td>
+        <td class="tg-0lax" style="vertical-align: middle; height: 200px; width: 500px;"><p>Text Reference 1</p></td>
+        <td style="vertical-align: top;">
+          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+            <pre>[00:29.21]你说你想在海边买一所房子
+[00:36.02]和你可爱的松狮一起住在那里
+[00:43.00]你会当一个心情杂货铺的老板娘
+[00:49.60]随着心情卖着自己喜欢的东西
+[00:57.14]生活越来越压抑
+[01:00.40]你变得越来越不像自己
+[01:04.15]一个人站在悲催的风里
+[01:10.96]玫瑰你在哪里
+[01:14.15]你说你爱过的人都已经离去
+[01:17.65]不要欺骗自己
+[01:21.90]你只是隐藏得比较深而已
+[01:24.96]玫瑰你在哪里
+[01:28.00]你总是喜欢抓不住的东西
+[01:31.48]请你不要哭泣
+[01:34.48]我们都只剩下一堆用青春编织成的回忆
+[02:12.65]转眼两年时间已过去
+[02:19.59]该忘记的你有没有忘记
+[02:25.93]你说你最近爱上了旅行
+[02:32.58]我知道你也只是在逃避
+[02:39.87]逃避现实和过去
+[02:43.28]逃避一个最不真实的你
+[02:46.75]一个人的路上只是在找寻
+[02:53.63]玫瑰你在哪里
+[02:56.58]你说你爱过的人都已经离去
+[03:00.34]不要欺骗自己
+[03:03.55]你只是隐藏得比较深而已
+[03:07.08]玫瑰你在哪里
+[03:10.28]你总是喜欢抓不住的东西
+[03:13.78]请你不要哭泣
+[03:17.12]我们都只剩下一堆用青春编织成的回忆
+[03:27.93]玫瑰你在哪里
+[03:30.78]你说你爱过的人都已经离去
+[03:34.65]不要欺骗自己
+[03:37.90]你只是隐藏的比较深而已
+[03:41.43]玫瑰你在哪里
+[03:44.61]你总是喜欢抓不住的东西
+[03:48.31]请你不要哭泣
+[03:51.78]我们都只剩下一堆用青春编织成的回忆
+[04:01.33]用青春编织成的回忆</pre>
+          </div>
+        </td>
+        <td class="tg-0lax"><audio style="width: 400px" controls src="raw/samples/test.wav"></audio></td>
       </tr>
     </tbody></table>
     <br><br>
 
-    <h3>2.2. Speech Reference Zero-shot<a name="Comparison"></a></h3>
+    <h3>2.2. Music Generation With Audio Prompt <a name="Comparison"></a></h3>
     <br><br>
 
     <table><thead>
       <tr>
-        <th class="tg-0lax">Reference</th>
+        <th class="tg-0lax">Aduio Reference</th>
         <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Freestyler</th>
+        <th class="tg-0lax">DiffRhythm</th>
       </tr></thead>
-    <tbody>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref1.wav"></audio></td>
-        <td class="tg-0lax">Let Justin the boy post it, You got an album postpone it, I drop two and they both going, I got a feeling they're into feelings, They filming the show but won't show it, You gotta watch me in slow motion, I'm in that wide body bends, I go back to college, Do an album and then drop out again, Took me a minute to get here, My vision is crystal clear.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn1.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref2.wav"></audio></td>
-        <td class="tg-0lax">Some bitch want to kick it. I gotta hit the streets. If I didn't go get it, I guess we didn't eat. Back stressing this dickhead just come evicted me. Back stretching this coat, sipping this briccone. I swear I only write tracks so people get to see. I'm still waking up.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn2.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref3.wav"></audio></td>
-        <td class="tg-0lax">Baby, let me blow it like a trumpet. I could do it all. I could probably suck a waterman and through a straw. Believe me, every other day, new wig, new hair. Come take me out this smooth glare. I'll be waiting on you with some lawn. Should you rage at the spicy down low like bomb. Suey, boom. Nothing but a robe in your house.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn3.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref4.wav"></audio></td>
-        <td class="tg-0lax">But brothers got strikes like oral hers side. So look a lot. Inflation rise like yeast. S&amp;L scandal stole millions. But we need more police to take back our streets. It's drama. We all know that one time being extorting and big ballers, getting extra dotted with warrants in three states. Overcrowded prisons, hoping the DA dropped.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn4.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/ref5.wav"></audio></td>
-        <td class="tg-0lax">They want to see me take a dive, but I'm bawling up, Uh, politicin like a politician, Talking to the planet moves that's in my description, See the light, still these haters try to knock his vision, That's why I passed the opposition like a proposition, Why I age, which you know about the coalition, We told doubt us from the jumping they were.</td>
-        <td class="tg-0lax"><audio style="width: 400px;" controls="" src="raw/samples/speechref/syn5.wav"></audio></td>
-      </tr>
-    </tbody></table>
+      <tbody>
+        <tr>
+          <!-- <td class="tg-0lax"><audio style="width: 600px; margin: 0; padding: 0;box-sizing: border-box;" controls src="raw/samples/gpttta/syn5.wav"></audio></td> -->
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/Whataya_Want_from_Me.wav"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre white-space: pre-wrap;>[00:00.52]Abracadabra abracadabra
+[00:03.97]Ha
+[00:04.66]Abracadabra abracadabra
+[00:12.02]Yeah
+[00:15.80]Pay the toll to the angels
+[00:19.08]Drawin' circles in the clouds
+[00:23.31]Keep your mind on the distance
+[00:26.67]When the devil turns around
+[00:30.95]Hold me in your heart tonight
+[00:34.11]In the magic of the dark moonlight
+[00:38.44]Save me from this empty fight
+[00:43.83]In the game of life
+[00:45.84]Like a poem said by a lady in red
+[00:49.45]You hear the last few words of your life
+[00:53.15]With a haunting dance now you're both in a trance
+[00:56.90]It's time to cast your spell on the night
+[01:01.40]Abracadabra ama-ooh-na-na
+[01:04.88]Abracadabra porta-ooh-ga-ga
+[01:08.92]Abracadabra abra-ooh-na-na
+[01:12.30]In her tongue she's sayin'
+[01:14.76]Death or love tonight
+[01:18.61]Abracadabra abracadabra
+[01:22.18]Abracadabra abracadabra
+[01:26.08]Feel the beat under your feet
+[01:27.82]The floor's on fire
+[01:29.90]Abracadabra abracadabra
+[01:33.78]Choose the road on the west side</pre>
+            </div>
+          </td>
+          <td class="tg-0lax"><audio style="width: 400px" controls src="raw/samples/abracadabra_last_0.wav"></audio></td>
+        </tr>
+      </tbody></table>
     <br><br>
 
-    <h3>2.3. GPT Lyrics + Text-to-music Accompaniment<a name="Comparison"></a></h3>
-    <br><br>
-
-    <table><thead>
-      <tr>
-        <th class="tg-0lax">Reference</th>
-        <th class="tg-0lax">Lyrics<br>(Generated by GPT-4)</th>
-        <th class="tg-0lax">Accompaniment<br>(Generated by Stable Audio 2.0)</th>
-        <th class="tg-0lax">Freestyler</th>
-      </tr></thead>
-    <tbody>
-      <tr>
-        <td class="tg-0lax" rowspan="5"><audio style="width: 200px;" controls="" src="raw/samples/gpttta/ref1.wav"></audio></td>
-        <td class="tg-0lax">Yeah, I'm climbing to the peak, no time for defeat,<br>Got my mind on my goals, can't accept no retreat.<br>Spitting fire in the booth, let the truth get unleashed,<br>I'm a beast with the beats, let the rhythm be my leash.</td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm1.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn1.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Life’s a game of chess, I'm strategizing every move,<br>Got the world in my hands, now I'm ready to prove.<br>From the shadows to the spotlight, watch me make it shine,<br>In the rhythm of the night, all the stars align.</td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm2.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn2.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Rise up, get up, never gonna stop,<br>We’re breaking through the ceiling, we’re reaching for the top.<br>Keep your head high, no matter the grind,<br>We’re chasing down dreams with a rhythm that's defined.</td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm3.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn3.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Hustle in my veins, every day’s a new chapter,<br>Grinding through the struggle, I’m the lyrical raptor.<br>Got a vision, got a plan, ain't no chance to stumble,<br>On this journey to the top, see the weak ones crumble.</td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm4.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn4.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">A warrior in the game, got the heart of a lion,<br>Every setback is a setup for a bigger horizon.<br>From the block to the charts, yeah, I'm leaving a mark,<br>Illuminating paths, let my name leave a spark.</td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/bgm5.wav"></audio></td>
-        <td class="tg-0lax"><audio style="width: 350px;" controls="" src="raw/samples/gpttta/syn5.wav"></audio></td>
-      </tr>
-    </tbody></table>
-
-    <!--
-    <table>
-      <tbody id="tbody">
-      </tbody>
-    </table> 
-  -->
     <h2>3. Ethics statement<a name="Comparison"></a></h2>
-    <p>
-      Freestyler is capable of synthesizing zero-shot rap vocal with any speaker's timbre. It is intended for use in entertainment, educational purposes, and similar applications. However, the technology carries potential risks, including the misuse of the model for spoofing voice identification or impersonating specific individuals.
-      Our experiments have been conducted using publicly available data. If the model is generalized to unseen speakers in the real world, it should include a protocol to ensure that the speaker approves the use of their voice.
+    <p style="text-align: justify;">
+      DiffRhythm enables the creation of original music across diverse genres, supporting applications in artistic creation, education, and entertainment. While designed for positive use cases, potential risks include unintentional copyright infringement through stylistic similarities, inappropriate blending of cultural musical elements, and misuse for generating harmful content. 
+      To ensure responsible deployment, users must implement verification mechanisms to confirm musical originality, disclose AI involvement in generated works, and obtain permissions when adapting protected styles. 
+      <!-- Freestyler is capable of synthesizing zero-shot rap vocal with any speaker's timbre. It is intended for use in entertainment, educational purposes, and similar applications. However, the technology carries potential risks, including the misuse of the model for spoofing voice identification or impersonating specific individuals.
+      Our experiments have been conducted using publicly available data. If the model is generalized to unseen speakers in the real world, it should include a protocol to ensure that the speaker approves the use of their voice. -->
     </p>
 
   </section>
