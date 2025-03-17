@@ -8,9 +8,11 @@
 
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-  <title>DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent Diffusion</title>
+  <title>DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent
+    Diffusion</title>
   <meta name="generator" content="Jekyll v3.9.0">
-  <meta property="og:title" content="DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent Diffusion">
+  <meta property="og:title"
+    content="DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent Diffusion">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
   <!-- End Jekyll SEO tag -->
@@ -27,109 +29,158 @@
 
   <section class="main-content">
     <h1 id="">
-      <center>DiffRhythm: Blazingly Fast and Embarrassingly Simple </br> End-to-End Full-Length Song Generation with Latent Diffusion</center>
+      <center>DiffRhythm: Blazingly Fast and Embarrassingly Simple </br> End-to-End Full-Length Song Generation with
+        Latent Diffusion</center>
     </h1>
 
-    <center>Ziqian Ning<sup>1</sup>, Huakang Chen<sup>1</sup>, Yuepeng Jiang<sup>1</sup>, Jixun Yao<sup>1</sup>, Chunbo Hao<sup>1</sup>, Guobin Ma<sup>1</sup>, Shuai Wang<sup>2</sup>, Lei Xie<sup>1</sup></center>
-    <center><a href="http://www.npu-aslp.org">Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China </a></center>
-    <center><a href="http://www.sribd.cn/en">Shenzhen Research Institute of Big Data, The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</a></center>
-    
+    <center>Ziqian Ning<sup>1</sup>, Huakang Chen<sup>1</sup>, Yuepeng Jiang<sup>1</sup>, Jixun Yao<sup>1</sup>, Chunbo
+      Hao<sup>1</sup>, Guobin Ma<sup>1</sup>, Shuai Wang<sup>2</sup>, Lei Xie<sup>1</sup></center>
+    <center><a href="http://www.npu-aslp.org">Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer
+        Science, Northwestern Polytechnical University, Xi'an, China </a></center>
+    <center><a href="http://www.sribd.cn/en">Shenzhen Research Institute of Big Data, The Chinese University of Hong
+        Kong, Shenzhen (CUHK-Shenzhen), China</a></center>
+
     <br><br>
 
     <div style="text-align: center">
-      <a href="https://github.com/ASLP-lab/DiffRhythm" class="github-link" target="_blank" rel="noopener noreferrer" style="margin-right: 20px;">
+      <a href="https://github.com/ASLP-lab/DiffRhythm" class="github-link" target="_blank" rel="noopener noreferrer"
+        style="margin-right: 20px;">
         <svg fill="currentColor" height="28" width="28" viewBox="0 0 16 16">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
         </svg>
         <span style="font-size: 24px ;">GitHub</span>
       </a>
 
-      <a href="https://huggingface.co/ASLP-lab/DiffRhythm-base" class="huggingface-link" target="_blank" rel="noopener noreferrer" style="margin-right: 20px;">
+      <a href="https://huggingface.co/ASLP-lab/DiffRhythm-base" class="huggingface-link" target="_blank"
+        rel="noopener noreferrer" style="margin-right: 20px;">
         <svg fill="currentColor" height="28" width="28" viewBox="0 0 24 24">
-          <path d="M16.781 3.277c2.997 1.704 4.844 4.851 4.844 8.258 0 .995-.155 1.955-.443 2.857a1.332 1.332 0 011.125.4 1.41 1.41 0 01.2 1.723c.204.165.352.385.428.632l.017.062c.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.255.57-.893 1.018-2.128 1.5l-.202.078-.131.048c-.478.173-.89.295-1.061.345l-.086.024c-.89.243-1.808.375-2.732.394-1.32 0-2.3-.36-2.923-1.067a9.852 9.852 0 01-3.18.018C9.778 21.647 8.802 22 7.494 22a11.249 11.249 0 01-2.541-.343l-.221-.06-.273-.08a16.574 16.574 0 01-1.175-.405c-1.237-.483-1.875-.93-2.13-1.501-.186-.4-.151-.867.093-1.236a1.42 1.42 0 01-.2-1.166c.069-.273.226-.516.447-.694a1.41 1.41 0 01.2-1.722c.233-.248.557-.391.917-.407l.078-.001a9.385 9.385 0 01-.44-2.85c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0zM4.188 14.758c.125.687 2.357 2.35 2.14 2.707-.19.315-.796-.239-.948-.386l-.041-.04-.168-.147c-.561-.479-2.304-1.9-2.74-1.432-.43.46.119.859 1.055 1.42l.784.467.136.083c1.045.643 1.12.84.95 1.113-.188.295-3.07-2.1-3.34-1.083-.27 1.011 2.942 1.304 2.744 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725l.16.04.175.042c1.227.284 3.565.65 4.435-.604.673-.973.64-1.709-.248-2.61l-.057-.057c-.945-.928-1.495-2.288-1.495-2.288l-.017-.058-.025-.072c-.082-.22-.284-.639-.63-.584-.46.073-.798 1.21.12 1.933l.05.038c.977.721-.195 1.21-.573.534l-.058-.104-.143-.25c-.463-.799-1.282-2.111-1.739-2.397-.532-.332-.907-.148-.782.541zm14.842-.541c-.533.335-1.563 2.074-1.94 2.751a.613.613 0 01-.687.302.436.436 0 01-.176-.098.303.303 0 01-.049-.06l-.014-.028-.008-.02-.007-.019-.003-.013-.003-.017a.289.289 0 01-.004-.048c0-.12.071-.266.25-.427.026-.024.054-.047.084-.07l.047-.036c.022-.016.043-.032.063-.049.883-.71.573-1.81.131-1.917l-.031-.006-.056-.004a.368.368 0 00-.062.006l-.028.005-.042.014-.039.017-.028.015-.028.019-.036.027-.023.02c-.173.158-.273.428-.31.542l-.016.054s-.53 1.309-1.439 2.234l-.054.054c-.365.358-.596.69-.702 1.018-.143.437-.066.868.21 1.353.055.097.117.195.187.296.882 1.275 3.282.876 4.494.59l.286-.07.25-.074c.276-.084.736-.233 1.2-.42l.188-.077.065-.028.064-.028.124-.056.081-.038c.529-.252.964-.543.994-.827l.001-.036a.299.299 0 00-.037-.139c-.094-.176-.271-.212-.491-.168l-.045.01c-.044.01-.09.024-.136.04l-.097.035-.054.022c-.559.23-1.238.705-1.607.745h.006a.452.452 0 01-.05.003h-.024l-.024-.003-.023-.005c-.068-.016-.116-.06-.14-.142a.22.22 0 01-.005-.1c.062-.345.958-.595 1.713-.91l.066-.028c.528-.224.97-.483.985-.832v-.04a.47.47 0 00-.016-.098c-.048-.18-.175-.251-.36-.251-.785 0-2.55 1.36-2.92 1.36-.025 0-.048-.007-.058-.024a.6.6 0 01-.046-.088c-.1-.238.068-.462 1.06-1.066l.209-.126c.538-.32 1.01-.588 1.341-.831.29-.212.475-.406.503-.6l.003-.028c.008-.113-.038-.227-.147-.344a.266.266 0 00-.07-.054l-.034-.015-.013-.005a.403.403 0 00-.13-.02c-.162 0-.369.07-.595.18-.637.313-1.431.952-1.826 1.285l-.249.215-.033.033c-.08.078-.288.27-.493.386l-.071.037-.041.019a.535.535 0 01-.122.036h.005a.346.346 0 01-.031.003l.01-.001-.013.001c-.079.005-.145-.021-.19-.095a.113.113 0 01-.014-.065c.027-.465 2.034-1.991 2.152-2.642l.009-.048c.1-.65-.271-.817-.791-.493zM11.938 2.984c-4.798 0-8.688 3.829-8.688 8.55 0 .692.083 1.364.24 2.008l.008-.009c.252-.298.612-.46 1.017-.46.355.008.699.117.993.312.22.14.465.384.715.694.261-.372.69-.598 1.15-.605.852 0 1.367.728 1.562 1.383l.047.105.06.127c.192.396.595 1.139 1.143 1.68 1.06 1.04 1.324 2.115.8 3.266a8.865 8.865 0 002.024-.014c-.505-1.12-.26-2.17.74-3.186l.066-.066c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694a1.87 1.87 0 01.99-.312c.357 0 .682.126.925.36.14-.61.215-1.245.215-1.898 0-4.722-3.89-8.55-8.687-8.55zm1.857 8.926l.439-.212c.553-.264.89-.383.89.152 0 1.093-.771 3.208-3.155 3.262h-.184c-2.325-.052-3.116-2.06-3.156-3.175l-.001-.087c0-1.107 1.452.586 3.25.586.716 0 1.379-.272 1.917-.526zm4.017-3.143c.45 0 .813.358.813.8 0 .441-.364.8-.813.8a.806.806 0 01-.812-.8c0-.442.364-.8.812-.8zm-11.624 0c.448 0 .812.358.812.8 0 .441-.364.8-.812.8a.806.806 0 01-.813-.8c0-.442.364-.8.813-.8zm7.79-.841c.32-.384.846-.54 1.33-.394.483.146.83.564.878 1.06.048.495-.212.97-.659 1.203-.322.168-.447-.477-.767-.585l.002-.003c-.287-.098-.772.362-.925.079a1.215 1.215 0 01.14-1.36zm-4.323 0c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003c-.108.036-.194.134-.273.24l-.118.165c-.11.15-.22.262-.377.18a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394z"></path>
+          <path
+            d="M16.781 3.277c2.997 1.704 4.844 4.851 4.844 8.258 0 .995-.155 1.955-.443 2.857a1.332 1.332 0 011.125.4 1.41 1.41 0 01.2 1.723c.204.165.352.385.428.632l.017.062c.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.255.57-.893 1.018-2.128 1.5l-.202.078-.131.048c-.478.173-.89.295-1.061.345l-.086.024c-.89.243-1.808.375-2.732.394-1.32 0-2.3-.36-2.923-1.067a9.852 9.852 0 01-3.18.018C9.778 21.647 8.802 22 7.494 22a11.249 11.249 0 01-2.541-.343l-.221-.06-.273-.08a16.574 16.574 0 01-1.175-.405c-1.237-.483-1.875-.93-2.13-1.501-.186-.4-.151-.867.093-1.236a1.42 1.42 0 01-.2-1.166c.069-.273.226-.516.447-.694a1.41 1.41 0 01.2-1.722c.233-.248.557-.391.917-.407l.078-.001a9.385 9.385 0 01-.44-2.85c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0zM4.188 14.758c.125.687 2.357 2.35 2.14 2.707-.19.315-.796-.239-.948-.386l-.041-.04-.168-.147c-.561-.479-2.304-1.9-2.74-1.432-.43.46.119.859 1.055 1.42l.784.467.136.083c1.045.643 1.12.84.95 1.113-.188.295-3.07-2.1-3.34-1.083-.27 1.011 2.942 1.304 2.744 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725l.16.04.175.042c1.227.284 3.565.65 4.435-.604.673-.973.64-1.709-.248-2.61l-.057-.057c-.945-.928-1.495-2.288-1.495-2.288l-.017-.058-.025-.072c-.082-.22-.284-.639-.63-.584-.46.073-.798 1.21.12 1.933l.05.038c.977.721-.195 1.21-.573.534l-.058-.104-.143-.25c-.463-.799-1.282-2.111-1.739-2.397-.532-.332-.907-.148-.782.541zm14.842-.541c-.533.335-1.563 2.074-1.94 2.751a.613.613 0 01-.687.302.436.436 0 01-.176-.098.303.303 0 01-.049-.06l-.014-.028-.008-.02-.007-.019-.003-.013-.003-.017a.289.289 0 01-.004-.048c0-.12.071-.266.25-.427.026-.024.054-.047.084-.07l.047-.036c.022-.016.043-.032.063-.049.883-.71.573-1.81.131-1.917l-.031-.006-.056-.004a.368.368 0 00-.062.006l-.028.005-.042.014-.039.017-.028.015-.028.019-.036.027-.023.02c-.173.158-.273.428-.31.542l-.016.054s-.53 1.309-1.439 2.234l-.054.054c-.365.358-.596.69-.702 1.018-.143.437-.066.868.21 1.353.055.097.117.195.187.296.882 1.275 3.282.876 4.494.59l.286-.07.25-.074c.276-.084.736-.233 1.2-.42l.188-.077.065-.028.064-.028.124-.056.081-.038c.529-.252.964-.543.994-.827l.001-.036a.299.299 0 00-.037-.139c-.094-.176-.271-.212-.491-.168l-.045.01c-.044.01-.09.024-.136.04l-.097.035-.054.022c-.559.23-1.238.705-1.607.745h.006a.452.452 0 01-.05.003h-.024l-.024-.003-.023-.005c-.068-.016-.116-.06-.14-.142a.22.22 0 01-.005-.1c.062-.345.958-.595 1.713-.91l.066-.028c.528-.224.97-.483.985-.832v-.04a.47.47 0 00-.016-.098c-.048-.18-.175-.251-.36-.251-.785 0-2.55 1.36-2.92 1.36-.025 0-.048-.007-.058-.024a.6.6 0 01-.046-.088c-.1-.238.068-.462 1.06-1.066l.209-.126c.538-.32 1.01-.588 1.341-.831.29-.212.475-.406.503-.6l.003-.028c.008-.113-.038-.227-.147-.344a.266.266 0 00-.07-.054l-.034-.015-.013-.005a.403.403 0 00-.13-.02c-.162 0-.369.07-.595.18-.637.313-1.431.952-1.826 1.285l-.249.215-.033.033c-.08.078-.288.27-.493.386l-.071.037-.041.019a.535.535 0 01-.122.036h.005a.346.346 0 01-.031.003l.01-.001-.013.001c-.079.005-.145-.021-.19-.095a.113.113 0 01-.014-.065c.027-.465 2.034-1.991 2.152-2.642l.009-.048c.1-.65-.271-.817-.791-.493zM11.938 2.984c-4.798 0-8.688 3.829-8.688 8.55 0 .692.083 1.364.24 2.008l.008-.009c.252-.298.612-.46 1.017-.46.355.008.699.117.993.312.22.14.465.384.715.694.261-.372.69-.598 1.15-.605.852 0 1.367.728 1.562 1.383l.047.105.06.127c.192.396.595 1.139 1.143 1.68 1.06 1.04 1.324 2.115.8 3.266a8.865 8.865 0 002.024-.014c-.505-1.12-.26-2.17.74-3.186l.066-.066c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694a1.87 1.87 0 01.99-.312c.357 0 .682.126.925.36.14-.61.215-1.245.215-1.898 0-4.722-3.89-8.55-8.687-8.55zm1.857 8.926l.439-.212c.553-.264.89-.383.89.152 0 1.093-.771 3.208-3.155 3.262h-.184c-2.325-.052-3.116-2.06-3.156-3.175l-.001-.087c0-1.107 1.452.586 3.25.586.716 0 1.379-.272 1.917-.526zm4.017-3.143c.45 0 .813.358.813.8 0 .441-.364.8-.813.8a.806.806 0 01-.812-.8c0-.442.364-.8.812-.8zm-11.624 0c.448 0 .812.358.812.8 0 .441-.364.8-.812.8a.806.806 0 01-.813-.8c0-.442.364-.8.813-.8zm7.79-.841c.32-.384.846-.54 1.33-.394.483.146.83.564.878 1.06.048.495-.212.97-.659 1.203-.322.168-.447-.477-.767-.585l.002-.003c-.287-.098-.772.362-.925.079a1.215 1.215 0 01.14-1.36zm-4.323 0c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003c-.108.036-.194.134-.273.24l-.118.165c-.11.15-.22.262-.377.18a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394z">
+          </path>
         </svg>
         <span style="font-size: 24px;">Hugging Face</span>
       </a>
-      
-      <a href="https://huggingface.co/spaces/ASLP-lab/DiffRhythm" class="huggingface-link" target="_blank" rel="noopener noreferrer">
-        <svg class="size-8 mr-1.5 dark:mr-2 dark:drop-shadow-md" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="28" height="28" preserveAspectRatio="xMidYMid meet" viewBox="0 0 39 40">
-          <path d="M6.3712 2.04427C3.7183 2.04427 1.56771 4.19486 1.56771 6.84776V18.3546V18.6544V32.7341C1.56771 35.3868 3.71818 37.5377 6.3712 37.5377H17.878H20.7507H32.2575C34.9104 37.5377 37.0612 35.387 37.0612 32.7341V21.6204C37.0612 20.177 36.4252 18.8839 35.4189 18.004C36.4576 16.3895 37.0612 14.4666 37.0612 12.4046C37.0612 6.68274 32.4225 2.04427 26.7007 2.04427C24.6388 2.04427 22.7159 2.64776 21.1014 3.68647C20.2214 2.6802 18.9282 2.04427 17.4849 2.04427H6.3712Z" fill="black" class="stroke-white dark:stroke-white/10" stroke-width="3.07552"></path><path d="M9.56855 23.5001C8.8406 23.5001 8.25047 24.0902 8.25047 24.8182V29.5361C8.25047 30.2641 8.8406 30.8542 9.56855 30.8542H14.2864C15.0144 30.8542 15.6045 30.2641 15.6045 29.5361V24.8182C15.6045 24.0902 15.0143 23.5001 14.2864 23.5001H9.56855Z" fill="#FF3270"></path><path d="M24.3409 23.5001C23.613 23.5001 23.0228 24.0902 23.0228 24.8182V29.5361C23.0228 30.2641 23.613 30.8542 24.3409 30.8542H29.0588C29.7868 30.8542 30.3769 30.2641 30.3769 29.5361V24.8182C30.3769 24.0902 29.7868 23.5001 29.0588 23.5001H24.3409Z" fill="#861FFF"></path><path d="M9.56855 8.72815C8.8406 8.72815 8.25047 9.31827 8.25047 10.0462V14.7641C8.25047 15.4921 8.8406 16.0822 9.56855 16.0822H14.2864C15.0144 16.0822 15.6045 15.4921 15.6045 14.7641V10.0462C15.6045 9.31827 15.0143 8.72815 14.2864 8.72815H9.56855Z" fill="#097EFF"></path><path d="M26.6999 8.72815C24.6692 8.72815 23.0228 10.3744 23.0228 12.4052C23.0228 14.4359 24.6692 16.0822 26.6999 16.0822C28.7306 16.0822 30.3769 14.4359 30.3769 12.4052C30.3769 10.3744 28.7306 8.72815 26.6999 8.72815Z" fill="#FFD702"></path>
+
+      <a href="https://huggingface.co/spaces/ASLP-lab/DiffRhythm" class="huggingface-link" target="_blank"
+        rel="noopener noreferrer">
+        <svg class="size-8 mr-1.5 dark:mr-2 dark:drop-shadow-md" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="28"
+          height="28" preserveAspectRatio="xMidYMid meet" viewBox="0 0 39 40">
+          <path
+            d="M6.3712 2.04427C3.7183 2.04427 1.56771 4.19486 1.56771 6.84776V18.3546V18.6544V32.7341C1.56771 35.3868 3.71818 37.5377 6.3712 37.5377H17.878H20.7507H32.2575C34.9104 37.5377 37.0612 35.387 37.0612 32.7341V21.6204C37.0612 20.177 36.4252 18.8839 35.4189 18.004C36.4576 16.3895 37.0612 14.4666 37.0612 12.4046C37.0612 6.68274 32.4225 2.04427 26.7007 2.04427C24.6388 2.04427 22.7159 2.64776 21.1014 3.68647C20.2214 2.6802 18.9282 2.04427 17.4849 2.04427H6.3712Z"
+            fill="black" class="stroke-white dark:stroke-white/10" stroke-width="3.07552"></path>
+          <path
+            d="M9.56855 23.5001C8.8406 23.5001 8.25047 24.0902 8.25047 24.8182V29.5361C8.25047 30.2641 8.8406 30.8542 9.56855 30.8542H14.2864C15.0144 30.8542 15.6045 30.2641 15.6045 29.5361V24.8182C15.6045 24.0902 15.0143 23.5001 14.2864 23.5001H9.56855Z"
+            fill="#FF3270"></path>
+          <path
+            d="M24.3409 23.5001C23.613 23.5001 23.0228 24.0902 23.0228 24.8182V29.5361C23.0228 30.2641 23.613 30.8542 24.3409 30.8542H29.0588C29.7868 30.8542 30.3769 30.2641 30.3769 29.5361V24.8182C30.3769 24.0902 29.7868 23.5001 29.0588 23.5001H24.3409Z"
+            fill="#861FFF"></path>
+          <path
+            d="M9.56855 8.72815C8.8406 8.72815 8.25047 9.31827 8.25047 10.0462V14.7641C8.25047 15.4921 8.8406 16.0822 9.56855 16.0822H14.2864C15.0144 16.0822 15.6045 15.4921 15.6045 14.7641V10.0462C15.6045 9.31827 15.0143 8.72815 14.2864 8.72815H9.56855Z"
+            fill="#097EFF"></path>
+          <path
+            d="M26.6999 8.72815C24.6692 8.72815 23.0228 10.3744 23.0228 12.4052C23.0228 14.4359 24.6692 16.0822 26.6999 16.0822C28.7306 16.0822 30.3769 14.4359 30.3769 12.4052C30.3769 10.3744 28.7306 8.72815 26.6999 8.72815Z"
+            fill="#FFD702"></path>
         </svg>
         <span style="font-size: 24px;">Demo</span>
       </a>
     </div>
 
-    <h2 id="abstract" style="text-align: center;">1. Abstract<a name="abstract"></a></h2>
-    
-    <p style="text-align: justify;" >
-      Recent advancements in music generation have garnered significant attention, yet existing approaches face critical limitations. Some current generative models can only synthesize either the vocal track or the accompaniment track. While some models can generate combined vocal and accompaniment, they typically rely on meticulously designed multi-stage cascading architectures and intricate data pipelines, hindering scalability. Additionally, most systems are restricted to generating short musical segments rather than full-length songs. Furthermore, widely used language model-based methods suffer from slow inference speeds.
-      To address these challenges, we propose DiffRhythm, the first latent diffusion-based song generation model capable of synthesizing complete songs with both vocal and accompaniment for durations of up to 4m45s in only ten seconds, maintaining high musicality and intelligibility. Despite its remarkable capabilities, DiffRhythm is designed to be simple and elegant: it eliminates the need for complex data preparation, employs a straightforward model structure, and requires only lyrics and a style prompt during inference. Additionally, its non-autoregressive structure ensures fast inference speeds. This simplicity guarantees the scalability of DiffRhythm.
+    <h2 id="abstract" style="text-align: center;">Abstract<a name="abstract"></a></h2>
+
+    <p style="text-align: justify;">
+      Recent advancements in music generation have garnered significant attention, yet existing approaches face critical
+      limitations. Some current generative models can only synthesize either the vocal track or the accompaniment track.
+      While some models can generate combined vocal and accompaniment, they typically rely on meticulously designed
+      multi-stage cascading architectures and intricate data pipelines, hindering scalability. Additionally, most
+      systems are restricted to generating short musical segments rather than full-length songs. Furthermore, widely
+      used language model-based methods suffer from slow inference speeds.
+      To address these challenges, we propose DiffRhythm, the first latent diffusion-based song generation model capable
+      of synthesizing complete songs with both vocal and accompaniment for durations of up to 4m45s in only ten seconds,
+      maintaining high musicality and intelligibility. Despite its remarkable capabilities, DiffRhythm is designed to be
+      simple and elegant: it eliminates the need for complex data preparation, employs a straightforward model
+      structure, and requires only lyrics and a style prompt during inference. Additionally, its non-autoregressive
+      structure ensures fast inference speeds. This simplicity guarantees the scalability of DiffRhythm.
     </p>
-    
+
     <br><br>
     <style>
-        /* 将 figure 元素设置为居中 */
-        figure {
-            text-align: center; /* 内容居中对齐 */
-            margin: 0; /* 移除默认外边距 */
-        }
+      /* 将 figure 元素设置为居中 */
+      figure {
+        text-align: center;
+        /* 内容居中对齐 */
+        margin: 0;
+        /* 移除默认外边距 */
+      }
 
-        /* 让图片保持其原始大小 */
-        img {
-            max-width: 100%; /* 限制图片最大宽度以适应父容器 */
-            height: auto; /* 保持高度自动 */
-        }
+      /* 让图片保持其原始大小 */
+      img {
+        max-width: 100%;
+        /* 限制图片最大宽度以适应父容器 */
+        height: auto;
+        /* 保持高度自动 */
+      }
 
-        /* 设置 figcaption 的样式 */
-        figcaption {
-            margin-top: 8px; /* 与图片之间的间距 */
-            font-size: 14px; /* 说明文字的字体大小 */
-            color: #555; /* 说明文字的颜色 */
-        }
-        .gallery {
-            display: flex;
-            justify-content: center; /* 居中对齐 */
-            align-items: center;
-            flex-direction: column; /* 垂直排列 */
-        }
+      /* 设置 figcaption 的样式 */
+      figcaption {
+        margin-top: 8px;
+        /* 与图片之间的间距 */
+        font-size: 14px;
+        /* 说明文字的字体大小 */
+        color: #555;
+        /* 说明文字的颜色 */
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        /* 居中对齐 */
+        align-items: center;
+        flex-direction: column;
+        /* 垂直排列 */
+      }
     </style>
     <figure>
-        <img src="raw/fig/model.png" alt="model" width="1000" height="600">
-        <!-- <figcaption>Figure : Architecture of DiffRhythm. </figcaption> -->
+      <img src="raw/fig/model.png" alt="model" width="1000" height="600">
+      <!-- <figcaption>Figure : Architecture of DiffRhythm. </figcaption> -->
     </figure>
     <br><br>
 
-    
+
     <div class="toc">
       <h3>Table of contents</h3>
       <ul>
-        <li><a href="#English-Demo">2. English</a></li>
-        <li><a href="#Chinese-Demo">3. Chinese</a></li>
-        <li><a href="#Extra-Mode">4. Extra Mode</a>
+        <li><a href="#English-Demo">English</a></li>
+        <li><a href="#Chinese-Demo">Chinese</a></li>
+        <li><a href="#Extra-Mode">Extra Mode</a>
           <ul>
-            <li><a href="#Text-Prompt">4.1 Text Prompt</a></li>
-            <li><a href="#Pure-Music">4.2 Pure Music</a></li>
-            <li><a href="#Vocal-Music">4.3 Vocal Music</a></li>
+            <li><a href="#Text-Prompt">Text Prompt</a></li>
+            <li><a href="#Pure-Music">Pure Music</a></li>
+            <li><a href="#Vocal-Music">Vocal Music</a></li>
           </ul>
-          </li>
+        </li>
       </ul>
     </div>
 
-    <h2 id="English-Demo">2. English <a name="English Demo"></a></h2>
+    <h2 id="English-Demo">English <a name="English Demo"></a></h2>
     <table>
-    </colgroup>
-    <thead>
-      <tr>
-        <th class="tg-0lax">DiffRhythm</th>
-        <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Audio Reference</th>
-      </tr></thead>
-    <tbody>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/llm_demo7_classic_last_1.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-0lax">DiffRhythm</th>
+          <th class="tg-0lax">Lyrics</th>
+          <th class="tg-0lax">Audio Reference</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/llm_demo7_classic_last_1.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
 [00:15.00]Thunder cracks the hourglass sky
 [00:18.30]Petals bleed through concrete cracks
 [00:21.75]We're the seeds that learned to fight
@@ -150,16 +201,18 @@
 [01:20.35]Youth's not sold  we stole the tune
 [01:23.80]Graffiti skies with comet trails
 [01:27.25]Our chorus drowns out warning wails</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/classic_en.wav"></audio></td>
-      </tr>
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/classic_en.wav"></audio></td>
+        </tr>
 
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/llm_demo5_rock_last_0.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/llm_demo5_rock_last_0.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
 [00:15.00]Golden rays melt the skyline slow
 [00:19.30]Horizon sighs in violet hues
 [00:23.85]Whispers paint the clouds with glow
@@ -177,15 +230,17 @@
 [01:17.00]Tides erase the day's sharp stones
 [01:21.35]Salt air mends my furrowed brows
 [01:25.90]Oh twilight's velvet lullaby</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/rock_en.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/abracadabra.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre>[00:00.52]Abracadabra abracadabra
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/rock_en.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/abracadabra.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre>[00:00.52]Abracadabra abracadabra
 [00:03.97]Ha
 [00:04.66]Abracadabra abracadabra
 [00:12.02]Yeah
@@ -211,15 +266,17 @@
 [01:26.08]Feel the beat under your feet
 [01:27.82]The floor's on fire
 [01:29.90]Abracadabra abracadabra</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/Whataya_Want_from_Me.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/number_one_girl_country_last_3.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre>[00:04.34]Tell me that I'm special
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/Whataya_Want_from_Me.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/number_one_girl_country_last_3.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre>[00:04.34]Tell me that I'm special
 [00:06.57]Tell me I look pretty
 [00:08.46]Tell me I'm a little angel
 [00:10.58]Sweetheart of your city
@@ -250,15 +307,17 @@
 [01:28.91]Tell me that you need me
 [01:30.85]Tell me that I'm loved
 [01:32.90]Tell me that I'm worth it</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/country_en.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/numb_country_last_3.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre>[[00:22.19]I'm tired of being what you want me to be
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/country_en.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/numb_country_last_3.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre>[[00:22.19]I'm tired of being what you want me to be
 [00:25.87]Feeling so faithless lost under the surface
 [00:30.64]Don't know what you're expecting of me
 [00:34.38]Put under the pressure of walking in your shoes
@@ -277,15 +336,17 @@
 [01:22.41]Has fallen apart right in front of you
 [01:27.61]Caught in the undertow
 [01:29.00]Just caught in the undertow</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/country_en.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/love_hangover.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre>[00:07.23]Fight me fight me fight me
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/country_en.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/love_hangover.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre>[00:07.23]Fight me fight me fight me
 [00:08.73]You made me so unlike me
 [00:10.34]I don't wanna talk come behind me
 [00:12.07]Know you ain't the one but you might be
@@ -327,15 +388,17 @@
 [01:23.93]And all them jokes she told at dinner last night ain't had me dead I was playing possum
 [01:27.57]And when the waiter brought the check she said let's head to mine I said okay awesome
 [01:30.97]One minute we're growing apart</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/abracadabra.wav"></audio></td>
-      </tr>
-      <tr>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/ltwyl_classic_last_4.mp3"></audio></td>
-        <td style="vertical-align: top;">
-          <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
-            <pre>[00:00.61]On the first page of our story
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/abracadabra.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/ltwyl_classic_last_4.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre>[00:00.61]On the first page of our story
 [00:05.92]The future seemed so bright
 [00:11.84]Then this thing turned out so evil
 [00:17.46]I don't know why I'm still surprised
@@ -350,23 +413,95 @@
 [01:11.39]I love the way you lie
 [01:17.69]I love the way you lie
 [01:24.74]Now there's gravel in our voices</pre>
-          </div>
-        </td>
-        <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/classic_en.wav"></audio></td>
-      </tr>
-    </tbody></table>
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/classic_en.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/abracadabra_demo_4min.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre white-space: pre-wrap;>[00:00.52]Abracadabra abracadabra
+[00:03.97]Ha
+[00:04.66]Abracadabra abracadabra
+[00:12.02]Yeah
+[00:15.80]Pay the toll to the angels
+[00:19.08]Drawin' circles in the clouds
+[00:23.31]Keep your mind on the distance
+[00:26.67]When the devil turns around
+[00:30.95]Hold me in your heart tonight
+[00:34.11]In the magic of the dark moonlight
+[00:38.44]Save me from this empty fight
+[00:43.83]In the game of life
+[00:45.84]Like a poem said by a lady in red
+[00:49.45]You hear the last few words of your life
+[00:53.15]With a haunting dance now you're both in a trance
+[00:56.90]It's time to cast your spell on the night
+[01:01.40]Abracadabra ama-ooh-na-na
+[01:04.88]Abracadabra porta-ooh-ga-ga
+[01:08.92]Abracadabra abra-ooh-na-na
+[01:12.30]In her tongue she's sayin'
+[01:14.76]Death or love tonight
+[01:18.61]Abracadabra abracadabra
+[01:22.18]Abracadabra abracadabra
+[01:26.08]Feel the beat under your feet
+[01:27.82]The floor's on fire
+[01:29.90]Abracadabra abracadabra
+[01:33.78]Choose the road on the west side
+[01:37.09]As the dust flies watch it burn
+[01:41.45]Don't waste time on feeling
+[01:44.64]Your depression won't return
+[01:49.15]Hold me in your heart tonight
+[01:52.21]In the magic of the dark moonlight
+[01:56.54]Save me from this empty fight
+[02:01.77]In the game of life
+[02:03.94]Like a poem said by a lady in red
+[02:07.52]You hear the last few words of your life
+[02:11.19]With a haunting dance now you're both in a trance
+[02:14.95]It's time to cast your spell on the night
+[02:19.53]Abracadabra ama-ooh-na-na
+[02:22.71]Abracadabra porta-ooh-ga-ga
+[02:26.94]Abracadabra abra-ooh-na-na
+[02:30.42]In her tongue she's sayin'
+[02:32.83]Death or love tonight
+[02:36.55]Abracadabra abracadabra
+[02:40.27]Abracadabra abracadabra
+[02:44.19]Feel the beat under your feet
+[02:46.14]The floor's on fire
+[02:47.95]Abracadabra abracadabra
+[02:51.17]Phantom of the dance floor come to me
+[02:58.46]Sing for me a sinful melody
+[03:06.51]Ah-ah-ah-ah-ah ah-ah ah-ah
+[03:13.76]Ah-ah-ah-ah-ah ah-ah ah-ah
+[03:22.39]Abracadabra ama-ooh-na-na
+[03:25.66]Abracadabra porta-ooh-ga-ga
+[03:29.87]Abracadabra abra-ooh-na-na
+[03:33.16]In her tongue she's sayin'
+[03:35.55]Death or love tonight</pre>
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/abracadabra_prompt_4min.mp3"></audio></td>
+        </tr>
+      </tbody>
+    </table>
     <br><br>
 
-    <h2 id="Chinese-Demo">3. Chinese <a name="Chinese Demo"></a></h2>
-    <table><thead>
-      <tr>
-        <th class="tg-0lax">DiffRhythm</th>
-        <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Audio Reference</th>
-      </tr></thead>
+    <h2 id="Chinese-Demo">Chinese <a name="Chinese Demo"></a></h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="tg-0lax">DiffRhythm</th>
+          <th class="tg-0lax">Lyrics</th>
+          <th class="tg-0lax">Audio Reference</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/llm_demo2_pop_last_2.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/llm_demo2_pop_last_2.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
@@ -392,11 +527,13 @@
 [01:15.02]都是岁月给的答案</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/pop_cn.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/pop_cn.wav"></audio></td>
         </tr>
 
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/what_better.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/what_better.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:16.53]我一大早 起不来
@@ -416,10 +553,12 @@
 [01:29.58]六六大顺 七上八下</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/most_beautiful_expectation.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/most_beautiful_expectation.wav"></audio></td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/you_nv.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/you_nv.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:18.03]有女孤身
@@ -434,10 +573,12 @@
 [01:25.92]我一生 未羡过鸳鸯</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/you_nv.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/you_nv.wav"></audio></td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/chang_wen_ca_fei_jazz_last_4.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/chang_wen_ca_fei_jazz_last_4.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:06.79]失联了几年
@@ -461,10 +602,12 @@
 [01:29.02]或满桌餐点</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/jazz_cn.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/jazz_cn.wav"></audio></td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/chengdu_country_last_1.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/chengdu_country_last_1.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:18.23]让我掉下眼泪的
@@ -485,10 +628,12 @@
 [01:23.51]和我在成都的街头走一走</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/brightest_light_in_the_night_sky.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/brightest_light_in_the_night_sky.wav"></audio></td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/cha_hua_kai_le_country_last_1.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/cha_hua_kai_le_country_last_1.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:16.25]那是一座座山连着山的小村庄
@@ -506,21 +651,109 @@
 [01:25.77]他乡路 长又长 去又往 望呀望</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/prompt/country_cn.wav"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/country_cn.wav"></audio></td>
         </tr>
-      </tbody></table>
+        <tr>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/cha_hua_kai_le_demo_4min.mp3"></audio></td>
+          <td style="vertical-align: top;">
+            <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
+              <pre white-space: pre-wrap;>[00:00.27]只因你太美 baby 只因你太美 baby
+[00:08.95]只因你实在是太美 baby
+[00:13.99]只因你太美 baby
+[00:18.89]迎面走来的你让我如此蠢蠢欲动
+[00:20.88]这种感觉我从未有
+[00:21.79]Cause I got a crush on you who you
+[00:25.74]你是我的我是你的谁
+[00:28.09]再多一眼看一眼就会爆炸
+[00:30.31]再近一点靠近点快被融化
+[00:32.49]想要把你占为己有 baby bae
+[00:34.60]不管走到哪里
+[00:35.44]都会想起的人是你 you you
+[00:38.12]我应该拿你怎样
+[00:39.61]Uh 所有人都在看着你
+[00:42.36]我的心总是不安
+[00:44.18]Oh 我现在已病入膏肓
+[00:46.63]Eh oh
+[00:47.84]难道真的因你而疯狂吗
+[00:51.57]我本来不是这种人
+[00:53.59]因你变成奇怪的人
+[00:55.77]第一次呀变成这样的我
+[01:01.23]不管我怎么去否认
+[01:03.21]只因你太美 baby 只因你太美 baby
+[01:11.46]只因你实在是太美 baby
+[01:16.75]只因你太美 baby
+[01:21.09]Oh eh oh
+[01:22.82]现在确认地告诉我
+[01:25.26]Oh eh oh
+[01:27.31]你到底属于谁
+[01:29.98]Oh eh oh
+[01:31.70]现在确认地告诉我
+[01:34.45]Oh eh oh
+[01:36.35]你到底属于谁
+[01:37.65]就是现在告诉我
+[01:40.00]跟着那节奏 缓缓 make wave
+[01:42.42]甜蜜的奶油 it's your birthday cake
+[01:44.66]男人们的 game call me 你恋人
+[01:46.83]别被欺骗愉快的 I wanna play
+[01:48.83]我的脑海每分每秒为你一人沉醉
+[01:50.90]最迷人让我神魂颠倒是你身上香水
+[01:53.30]Oh right baby I'm fall in love with you
+[01:55.20]我的一切你都拿走
+[01:56.40]只要有你就已足够
+[01:58.56]我到底应该怎样
+[02:00.37]Uh 我心里一直很不安
+[02:03.12]其他男人们的视线
+[02:04.84]Oh 全都只看着你的脸
+[02:07.33]Eh oh
+[02:08.39]难道真的因你而疯狂吗
+[02:12.43]我本来不是这种人
+[02:14.35]因你变成奇怪的人
+[02:16.59]第一次呀变成这样的我
+[02:21.76]不管我怎么去否认
+[02:24.03]只因你太美 baby 只因你太美 baby
+[02:32.37]只因你实在是太美 baby
+[02:37.49]只因你太美 baby
+[02:43.66]我愿意把我的全部都给你
+[02:47.19]我每天在梦里都梦见你
+[02:49.13]还有我闭着眼睛也能看到你
+[02:52.58]现在开始我只准你看我
+[02:56.28]I don't wanna wake up in dream
+[02:57.92]我只想看你这是真心话
+[02:59.86]只因你太美 baby 只因你太美 baby
+[03:08.20]只因你实在是太美 baby
+[03:13.22]只因你太美 baby
+[03:17.69]Oh eh oh
+[03:19.36]现在确认的告诉我
+[03:21.91]Oh eh oh
+[03:23.85]你到底属于谁
+[03:26.58]Oh eh oh
+[03:28.32]现在确认的告诉我
+[03:30.95]Oh eh oh
+[03:32.82]你到底属于谁就是现在告诉我</pre>
+            </div>
+          </td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/prompt/cha_hua_kai_le_pormpt_4min.mp3"></audio></td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2 id="Extra-Mode">4. Extra Mode <a name="Extra Mode"></a></h2>
-    <h3 id="Text-Prompt">4.1 Text Prompt <a name="Text Prompt"></a></h3>
-    <table><thead>
-      <tr>
-        <th class="tg-0lax">DiffRhythm</th>
-        <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Text Reference</th>
-      </tr></thead>
+    <h2 id="Extra-Mode">Extra Mode <a name="Extra Mode"></a></h2>
+    <h3 id="Text-Prompt">Text Prompt <a name="Text Prompt"></a></h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="tg-0lax">DiffRhythm</th>
+          <th class="tg-0lax">Lyrics</th>
+          <th class="tg-0lax">Text Reference</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/zhi_yin_ni_tai_mei_pop_emotional.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/zhi_yin_ni_tai_mei_pop_emotional.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:04.27]只因你太美 baby
@@ -561,7 +794,8 @@
         </tr>
 
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/Jazzy Nightclub Vibe.mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/Jazzy Nightclub Vibe.mp3"></audio></td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
@@ -587,10 +821,13 @@
 [01:25.05]Burning through the atmosphere of endless night</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">Jazzy Nightclub Vibe</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">Jazzy Nightclub Vibe
+          </td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/独立民谣叙事曲，成长阵痛主题，木吉他分解和弦搭配口琴间奏(Indie folk ballad, coming-of-age themes, acoustic guitar picking with harmonica interludes).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/独立民谣叙事曲，成长阵痛主题，木吉他分解和弦搭配口琴间奏(Indie folk ballad, coming-of-age themes, acoustic guitar picking with harmonica interludes).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
@@ -616,10 +853,14 @@
 [01:25.05]Burning through the atmosphere of endless night</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">独立民谣叙事曲，成长阵痛主题，木吉他分解和弦搭配口琴间奏<br>(Indie folk ballad, coming-of-age themes, acoustic guitar picking with harmonica interludes)</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            独立民谣叙事曲，成长阵痛主题，木吉他分解和弦搭配口琴间奏<br>(Indie folk ballad, coming-of-age themes, acoustic guitar picking with
+            harmonica interludes)</td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/布宜诺斯艾利斯探戈说唱：街头涂鸦艺人的韵脚，班多钮风琴切分节奏(Buenos Aires tango-rap graffiti artist's rhymes over bandoneón syncopation).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/布宜诺斯艾利斯探戈说唱：街头涂鸦艺人的韵脚，班多钮风琴切分节奏(Buenos Aires tango-rap graffiti artist's rhymes over bandoneón syncopation).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;>[00:04.27]只因你太美 baby
@@ -656,10 +897,14 @@
 [01:34.45]Oh eh oh</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">布宜诺斯艾利斯探戈说唱：街头涂鸦艺人的韵脚，班多钮风琴切分节奏<br>(Buenos Aires tango-rap graffiti artist's rhymes over bandoneón syncopation)</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            布宜诺斯艾利斯探戈说唱：街头涂鸦艺人的韵脚，班多钮风琴切分节奏<br>(Buenos Aires tango-rap graffiti artist's rhymes over bandoneón
+            syncopation)</td>
         </tr>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/丧尸末日乡村摇滚：加油站大逃亡，班卓琴速弹与霰弹枪上膛节奏(Zombie apocalypse country-rock gas station escape, banjo shreds & shotgun reload beats).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/丧尸末日乡村摇滚：加油站大逃亡，班卓琴速弹与霰弹枪上膛节奏(Zombie apocalypse country-rock gas station escape, banjo shreds & shotgun reload beats).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
@@ -685,11 +930,15 @@
 [01:25.05]Burning through the atmosphere of endless night</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">丧尸末日乡村摇滚：加油站大逃亡，班卓琴速弹与霰弹枪上膛节奏<br>(Zombie apocalypse country-rock gas station escape, banjo shreds & shotgun reload beats)</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            丧尸末日乡村摇滚：加油站大逃亡，班卓琴速弹与霰弹枪上膛节奏<br>(Zombie apocalypse country-rock gas station escape, banjo shreds & shotgun
+            reload beats)</td>
         </tr>
 
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/AI情敌二重唱：人类与语音助手的嫉妒对决，声码器vs真声嘶吼(AI love rival duet human vs vocal assistant jealousy battle, vocoder vs raw screams).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/AI情敌二重唱：人类与语音助手的嫉妒对决，声码器vs真声嘶吼(AI love rival duet human vs vocal assistant jealousy battle, vocoder vs raw screams).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> # The following lyrics are generated by Deepseek R1
@@ -715,50 +964,67 @@
 [01:25.05]Burning through the atmosphere of endless night</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">AI情敌二重唱：人类与语音助手的嫉妒对决，声码器vs真声嘶吼<br>(AI love rival duet human vs vocal assistant jealousy battle, vocoder vs raw screams)</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            AI情敌二重唱：人类与语音助手的嫉妒对决，声码器vs真声嘶吼<br>(AI love rival duet human vs vocal assistant jealousy battle, vocoder vs
+            raw screams)</td>
         </tr>
 
-      </tbody></table>
+      </tbody>
+    </table>
     <br>
-    <h3 id="Pure-Music">4.2 Pure Music <a name="Pure Music"></a></h3>
-    <table><thead>
-      <tr>
-        <th class="tg-0lax">DiffRhythm</th>
-        <th class="tg-0lax">Lyrics</th>
-        <th class="tg-0lax">Text Reference</th>
-      </tr></thead>
+    <h3 id="Pure-Music">Pure Music <a name="Pure Music"></a></h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="tg-0lax">DiffRhythm</th>
+          <th class="tg-0lax">Lyrics</th>
+          <th class="tg-0lax">Text Reference</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/北极科考站，特雷门琴极光与地磁暴共舞(Arctic research station, theremin auroras dancing with geomagnetic storms).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/北极科考站，特雷门琴极光与地磁暴共舞(Arctic research station, theremin auroras dancing with geomagnetic storms).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> Pure music, enjoy.</pre>
             </div>
           </td>
-          
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">北极科考站，特雷门琴极光与地磁暴共舞<br>(Arctic research station, theremin auroras dancing with geomagnetic storms)</td>
+
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            北极科考站，特雷门琴极光与地磁暴共舞<br>(Arctic research station, theremin auroras dancing with geomagnetic storms)</td>
         </tr>
 
         <tr>
-          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls src="raw/samples/syn/山林木屋壁炉，民谣木吉他旋律裹着羊毛毯温度(Mountain cabin fireplace, acoustic guitar folk tunes wrapped in wool blankets).mp3"></audio></td>
+          <td class="tg-0lax" style="width: 500px;"><audio style="width: 100%;" controls
+              src="raw/samples/syn/山林木屋壁炉，民谣木吉他旋律裹着羊毛毯温度(Mountain cabin fireplace, acoustic guitar folk tunes wrapped in wool blankets).mp3"></audio>
+          </td>
           <td style="vertical-align: top;">
             <div style="max-height: 200px; overflow-y: auto; padding: 10px; width: 600px;">
               <pre white-space: pre-wrap;> Pure music, enjoy.</pre>
             </div>
           </td>
-          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">山林木屋壁炉，民谣木吉他旋律裹着羊毛毯温度<br>(Mountain cabin fireplace, acoustic guitar folk tunes wrapped in wool blankets)</td>
+          <td class="tg-0lax" style="width: 500px; text-align: center; vertical-align: middle;">
+            山林木屋壁炉，民谣木吉他旋律裹着羊毛毯温度<br>(Mountain cabin fireplace, acoustic guitar folk tunes wrapped in wool blankets)
+          </td>
         </tr>
-      </tbody></table>
+      </tbody>
+    </table>
     <br>
-    <h3 id="Vocal-Music">4.3 Vocal Music <a name="Vocal Music"></a></h3>
+    <h3 id="Vocal-Music">Vocal Music <a name="Vocal Music"></a></h3>
     <p style="text-align: justify;">
-          Comming soon!
+      Comming soon!
     </p>
 
-    <h2 id="Ethics-statement">5. Ethics Statement<a name="Ethics Statement"></a></h2>
+    <h2 id="Ethics-statement" style="text-align: center;">Ethics Statement<a name="Ethics Statement"></a></h2>
     <p style="text-align: justify;">
-      DiffRhythm enables the creation of original music across diverse genres, supporting applications in artistic creation, education, and entertainment. While designed for positive use cases, potential risks include unintentional copyright infringement through stylistic similarities, inappropriate blending of cultural musical elements, and misuse for generating harmful content. 
-      To ensure responsible deployment, users must implement verification mechanisms to confirm musical originality, disclose AI involvement in generated works, and obtain permissions when adapting protected styles. 
+      DiffRhythm enables the creation of original music across diverse genres, supporting applications in artistic
+      creation, education, and entertainment. While designed for positive use cases, potential risks include
+      unintentional copyright infringement through stylistic similarities, inappropriate blending of cultural musical
+      elements, and misuse for generating harmful content.
+      To ensure responsible deployment, users must implement verification mechanisms to confirm musical originality,
+      disclose AI involvement in generated works, and obtain permissions when adapting protected styles.
     </p>
 
   </section>
